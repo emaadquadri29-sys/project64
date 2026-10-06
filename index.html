@@ -619,7 +619,7 @@ if(dive&&gnd){dive=0;slid=.01;stun=.25;snd(150,.15,'sawtooth',.3)}
 // jump actions
 if(pr.jump&&!pound&&!dive){const cj=inSand?.6:1;if(gt>0){const turn=sp>6&&mg>.5&&(v.x*dx+v.z*dz)/sp<-.4;
 if(cr&&sp>5){v.x=Math.sin(p.ry)*18;v.z=Math.cos(p.ry)*18;v.y=10;snd(250,.3,'square',.3,500);slid=0}
-else if(cr){v.y=17;v.x=-Math.sin(p.ry)*5;v.z=-Math.cos(p.ry)*5;snd(350,.3,'square',.3,500)}
+else if(cr){v.y=28;v.x=-Math.sin(p.ry)*5;v.z=-Math.cos(p.ry)*5;snd(350,.3,'square',.3,500)}
 else if(turn){v.x=dx*8;v.z=dz*8;v.y=16;p.ry=Math.atan2(dx,dz);snd(450,.2,'square',.3,400)}
 else{v.y=(13+sp*.1)*cj;snd(330,.15,'square',.3,350)}jumps=1;gt=0;slid=0}
 else if(wt>0&&(wnx||wnz)){v.x=wnx*10;v.z=wnz*10;v.y=14;p.ry=Math.atan2(wnx,wnz);jumps=1;wt=0;snd(520,.15,'square',.3,400)}
